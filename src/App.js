@@ -7,8 +7,8 @@ import SearchItem from './SearchItem';
 
 function App() { 
     const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppinglist')));
-    const [newItem, setNewItem] = useState();
-    const [search, setSearch] = useState();
+    const [newItem, setNewItem] = useState('');
+    const [search, setSearch] = useState('');
     
     const setAndSaveItems = (newItem) => {
         setItems(newItem);
@@ -52,11 +52,11 @@ function App() {
                 setSearch={setSearch}
             />
             <Content 
-                items={items?.filter(item => ((item?.item)?.toLowerCase())?.includes(search?.toLowerCase()))}
+                items={items.filter(item => ((item.item).toLowerCase()).includes(search.toLowerCase()))}
                 handleCheck={handleCheck}
                 handleDelete={handleDelete}
             />
-            <Footer length={items?.length}/>
+            <Footer length={items.length}/>
         </div>
     );
 }
