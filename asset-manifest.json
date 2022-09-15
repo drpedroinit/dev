@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dev-koa/static/css/main.3f1be51f.css",
+    "main.js": "/dev-koa/static/js/main.a94e7101.js",
+    "index.html": "/dev-koa/index.html",
+    "main.3f1be51f.css.map": "/dev-koa/static/css/main.3f1be51f.css.map",
+    "main.a94e7101.js.map": "/dev-koa/static/js/main.a94e7101.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f1be51f.css",
+    "static/js/main.a94e7101.js"
+  ]
+}
