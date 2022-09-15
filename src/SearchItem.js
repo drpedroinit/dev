@@ -9,7 +9,7 @@ const SearchItem = ({search, setSearch}) => {
         type='text'
         role="searchbox"
         placeholder='Search Items'
-        value={search || ''}
+        value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
     </form>
